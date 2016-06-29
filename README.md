@@ -1,4 +1,4 @@
-#Lavarel Kickboc Validator
+#Lavarel Kickbox Validator
 A kickbox email lookup validator for form requests in laravel.
 This custom validator for Laravel uses the Kickbox Api to validate that an email actual exists. Not just if it has a specific format or not, but if the email is a real email registered email.
 
