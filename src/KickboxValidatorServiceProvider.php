@@ -24,7 +24,7 @@ class KickboxValidatorServiceProvider extends ServiceProvider
             $validator->extend('kickbox', function($attribute, $value, $parameters, $validator){
                 $client = new Kickbox(env('KICKBOX_API_KEY', 'key'));
                 return $client->kickbox()->verify($value)->body['result'] !== 'undeliverable';
-            }, $translator->get('kickbox::validation.kickbox'));
+            }, $translator->get('validation.kickbox'));
         });
     }
 
