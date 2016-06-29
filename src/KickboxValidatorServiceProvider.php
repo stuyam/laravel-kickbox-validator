@@ -15,12 +15,17 @@ class KickboxValidatorServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadTranslationsFrom(__DIR__ . '/../../lang', 'kickbox');
-        // $validator->extend('honeypot', 'honeypot@validateHoneypot', $translator->get('honeypot::validation.honeypot'));
-        \Validator::extend('kickbox', function($attribute, $value, $parameters, $validator){
-            $client = new Kickbox(env('KICKBOX_API_KEY', 'key'));
-            return $client->kickbox()->verify($value)->body['result'] !== 'undeliverable';
-        }, \Translator::get('honeypot::validation.honeypot'));
+        $this->app->booted(function($app) {
+            // Get validator and translator
+            $validator = $app['validator'];
+            $translator = $app['translator'];
+
+            $this->loadTranslationsFrom(__DIR__ . '/../../lang', 'kickbox');
+            $validator->extend('kickbox', function($attribute, $value, $parameters, $validator){
+                $client = new Kickbox(env('KICKBOX_API_KEY', 'key'));
+                return $client->kickbox()->verify($value)->body['result'] !== 'undeliverable';
+            }, $translator->get('kickbox::validation.kickbox'));
+        });
     }
 
     /**
