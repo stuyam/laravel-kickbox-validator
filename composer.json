@@ -1,0 +1,22 @@
+{
+    "name": "yamartino/laravel-kickbox-validator",
+    "description": "A kickbox custom validator for form requests,",
+    "license": "MIT",
+    "keywords": ["laravel", "kickbox", "validator", "validation", "email"],
+    "authors": [
+        {
+            "name": "Stuart Yamartino",
+            "email": "stuartyamartino@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "^5.2",
+        "kickbox/kickbox": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yamartino\\KickboxValidator\\": "src/"
+        }
+    }
+}
