@@ -23,7 +23,6 @@ Add to Twilio credentials to your .env file:
 
 ```
 KICKBOX_API_KEY=xxxxxxxxxx
-
 ```
 
 
