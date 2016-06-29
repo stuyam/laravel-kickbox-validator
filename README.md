@@ -2,7 +2,7 @@
 A kickbox email lookup validator for form requests in laravel.
 This custom validator for Laravel uses the Kickbox Api to validate that an email actual exists. Not just if it has a specific format or not, but if the email is a real email registered email.
 
-Also see: [Laravel Twilio Validator](https://packagist.org/packages/stuyam/laravel-twilio-validator) for phone number validation.
+Also see: [Laravel Twilio Validator](https://github.com/stuyam/laravel-twilio-validator) for phone number validation.
 
 ###Step 1
 Install via composer:
