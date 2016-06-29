@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'kickbox'  => 'Uhhhhhh no!'
+    'kickbox'  => 'The :attribute must be a valid email address.'
 ];
