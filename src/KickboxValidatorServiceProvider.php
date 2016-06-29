@@ -16,7 +16,7 @@ class KickboxValidatorServiceProvider extends ServiceProvider
     public function boot()
     {
         // load translation files
-        $this->loadTranslationsFrom(__DIR__ . '/lang', 'validation');
+        $this->loadTranslationsFrom(__DIR__ . '/lang', 'kickbox');
 
         $this->app->booted(function($app) {
             // Get validator and translator
@@ -26,7 +26,7 @@ class KickboxValidatorServiceProvider extends ServiceProvider
             $validator->extend('kickbox', function($attribute, $value, $parameters, $validator){
                 $client = new Kickbox(env('KICKBOX_API_KEY', 'key'));
                 return $client->kickbox()->verify($value)->body['result'] !== 'undeliverable';
-            }, $translator->get('validation.kickbox'));
+            }, $translator->get('kickbox::validation.kickbox'));
         });
     }
 
