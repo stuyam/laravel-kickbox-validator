@@ -16,7 +16,7 @@ class KickboxValidatorServiceProvider extends ServiceProvider
     public function boot()
     {
         // load translation files
-        $this->loadTranslationsFrom(__DIR__ . '/../../lang', 'kickbox');
+        $this->loadTranslationsFrom(__DIR__ . '/lang', 'validation');
 
         $this->app->booted(function($app) {
             // Get validator and translator
