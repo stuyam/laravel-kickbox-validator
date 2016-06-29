@@ -1,6 +1,6 @@
 <?php
 
-namespace Yamartino\KickboxValidator;
+namespace StuYam\KickboxValidator;
 
 use Illuminate\Support\ServiceProvider;
 use \Kickbox\Client as Kickbox;

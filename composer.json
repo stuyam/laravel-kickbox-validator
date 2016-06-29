@@ -1,5 +1,5 @@
 {
-    "name": "yamartino/laravel-kickbox-validator",
+    "name": "stuyam/laravel-kickbox-validator",
     "description": "A kickbox email validator for form requests in laravel",
     "license": "MIT",
     "keywords": ["laravel", "kickbox", "validator", "validation", "email"],
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Yamartino\\KickboxValidator\\": "src/"
+            "StuYam\\KickboxValidator\\": "src/"
         }
     }
 }
