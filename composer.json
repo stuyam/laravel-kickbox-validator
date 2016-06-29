@@ -1,6 +1,6 @@
 {
     "name": "yamartino/laravel-kickbox-validator",
-    "description": "A kickbox custom validator for form requests,",
+    "description": "A kickbox email validator for form requests in laravel",
     "license": "MIT",
     "keywords": ["laravel", "kickbox", "validator", "validation", "email"],
     "authors": [
