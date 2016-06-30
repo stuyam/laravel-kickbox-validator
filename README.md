@@ -15,7 +15,7 @@ composer require stuyam/laravel-kickbox-validator
 Add to your ```config/app.php``` service provider list:
 
 ```php
-StuYam\TwilioValidator\TwilioValidatorServiceProvider::class
+StuYam\KickboxValidator\KickboxValidatorServiceProvider::class
 ```
 
 ###Step 3
