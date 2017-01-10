@@ -1,4 +1,7 @@
 #Lavarel Kickbox Validator
+[![Packagist](https://img.shields.io/packagist/v/stuyam/laravel-kickbox-validator.svg)](https://packagist.org/packages/stuyam/laravel-kickbox-validator)
+[![Packagist](https://img.shields.io/packagist/dt/stuyam/laravel-kickbox-validator.svg)](https://packagist.org/packages/stuyam/laravel-kickbox-validator)
+
 A kickbox.io email lookup validator for form requests in laravel.
 This custom validator for Laravel uses the [kickbox.io](https://kickbox.io/) API to validate that an email actual exists. Not just if it has a specific format or not, but if the email is a real email registered email.
 
