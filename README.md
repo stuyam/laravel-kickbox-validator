@@ -28,6 +28,8 @@ Add Kickbox credentials to your .env file:
 KICKBOX_API_KEY=xxxxxxxxxx
 ```
 
+###Step 4 (optional)
+Publish the kickbox config with `php artisan vendor:publish --tag=kickbox`
 
 ###Usage
 Add the string 'kickbox' to a form request rules or validator like so:
