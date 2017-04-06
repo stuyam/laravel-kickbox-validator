@@ -1,4 +1,4 @@
-#Lavarel Kickbox Validator
+# Lavarel Kickbox Validator
 [![Packagist](https://img.shields.io/packagist/v/stuyam/laravel-kickbox-validator.svg)](https://packagist.org/packages/stuyam/laravel-kickbox-validator)
 [![Packagist](https://img.shields.io/packagist/dt/stuyam/laravel-kickbox-validator.svg)](https://packagist.org/packages/stuyam/laravel-kickbox-validator)
 
@@ -7,31 +7,31 @@ This custom validator for Laravel uses the [kickbox.io](https://kickbox.io/) API
 
 Also see: [Laravel Twilio Validator](https://github.com/stuyam/laravel-twilio-validator) for phone number validation.
 
-###Step 1
+## Step 1
 Install via composer:
 
 ```
 composer require stuyam/laravel-kickbox-validator
 ```
 
-###Step 2
+## Step 2
 Add to your ```config/app.php``` service provider list:
 
 ```php
 StuYam\KickboxValidator\KickboxValidatorServiceProvider::class
 ```
 
-###Step 3
+## Step 3
 Add Kickbox credentials to your .env file:
 
 ```
 KICKBOX_API_KEY=xxxxxxxxxx
 ```
 
-###Step 4 (optional)
+## Step 4 (optional)
 Publish the kickbox config with `php artisan vendor:publish --tag=kickbox`
 
-###Usage
+## Usage
 Add the string 'kickbox' to a form request rules or validator like so:
 
 ```php
